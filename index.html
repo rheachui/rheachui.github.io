@@ -399,6 +399,11 @@
             // Remove links that don't actually link to anything
             .not('[href="#"]')
             .not('[href="#0"]')
+            //Make the pills of the story not be effected. 
+            .not('[href="#pills-home"]')
+            .not('[href="#pills-profile"]')
+            .not('[href="#pills-contact"]')
+
             .click(function (event) {
                 // On-page links
                 if (

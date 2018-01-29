@@ -70,13 +70,16 @@
 
 .slide-content {
     padding: 10px;
-    min-height: 323px;
     width: 100%;
     padding-bottom:30px;
     background-color: rgb(54, 35, 12);
 }
 .swiper-pagination {
     bottom: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(240, 202, 32);
 }
 
 .swiper-slide.slide-content.swiper-slide-active {
@@ -152,6 +155,25 @@ h3::before {
     height: 600px;
     background-color: #aaa;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #343a40;
+}
+
+a.nav-link {
+    color:#fff;
+}
+
+a.nav-link:hover {
+    color:powderblue;
+}
+
+#pills-home, #pills-profile, #pills-contact {
+    min-height: 370px;
+    border-radius: 5px;
+    padding:15px 0;
+    background-color: #ccc;
+    
+}
 
 #story.container #story-title.row {
     padding-top: 10px;
@@ -159,7 +181,6 @@ h3::before {
 }
 
 .ws-story-content {
-    background-color: powderblue;
     min-height: 440px;
 }
 
