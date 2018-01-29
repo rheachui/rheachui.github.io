@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>瓦利亞強襲 ~Warrior Strike~</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/warrior_strike.css">
+
+    <style>
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Ad a navigation bar. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="text-hide ws-top-logo">瓦利亞強襲</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story-anchor">故事背景</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#char-1">主要角色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">常見問題</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- The First Section -->
+    <!-- Ad an background image. -->
+    <div class="top-bg">
+        <div id="header" class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <!-- Swiper -->
+                    <div class="swiper-container header-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-content"><img src="/img/沐謙-天使咖啡館聯名活動-01.png" alt=""></div>
+                            <div class="swiper-slide slide-content"><img src="/img/10萬下載工作區域 1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="dl-link-container">
+                        <div class="dl-link">
+                            <a href="#">
+                                <img class="dl-icons" src="/img/app_store-02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="dl-link">
+                            <a href="#">
+                                <img class="dl-icons" src="/img/google-play-01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- The Second Section - NEWS -->
+    <div id="news" class="container">
+        <div id="news-title" class="row">
+            <div class="col-md-12 ws-title bg-dark">
+                <h3>最新消息</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="ws-s-title bg-dark">
+                    <h3>
+                        近期活動
+                    </h3>
+                </div>
+                <div class="ws-board .bg-dark">
+                    <p>情人節天使咖啡館聯名活動2/07-2/14，每日登入送彩虹石。</p>
+                    <p>10萬人次下載紀念，全服玩家贈送10顆彩虹石。</p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="ws-s-title">
+                    <h3>
+                        更新維護
+                    </h3>
+                </div>
+                <div class="ws-board">
+                    <p>2017/02/06 05:00 p.m. 更新</p>
+                    <p>2017/02/06 12 : 00 p.m - 05: 00 維護</p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div id="story-anchor" class="row ws-interval"></div>
+    </div>
+    <!-- Ad an background image. -->
+    <!-- The Third Section - STORY -->
+    <div class="ws-bg-2">
+        <div id="story" class="container">
+            <div id="story-title" class="row">
+                <div class="col-md-12 ws-title bg-dark">
+                    <h3>故事背景</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 ws-story-content">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">第一段</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">第二段</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">第三段</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <p align="center">
+                                一群想消彌黑暗的英雄們聚集在 " 王城梅爾洛 "
+                            </p>
+                            <p class="draw-focus" align="center">
+                                接受"王"的冊封。</p>
+                            <p align="center">
+                                擅長使用劍的" 索爾斯 "，王賜予他劍" 阿力斯"。
+                            </p>
+                            <p align="center">擅長使用槍的" 蘭德爾 "，王賜予他槍" 陶洛斯 "。 </p>
+                            <p align="center">擅長使用雙刀的" 特伯爾 "，王賜予他雙刀" 高明尼 "。 </p>
+                            <p align="center">擅長使用拳法的"法斯特 "，王賜予他拳套" 坎斯爾 "。 </p>
+                            <p align="center">擅長使用刀的" 卡特蓮那 "，王賜予他刀" 里歐 "。</p>
+                            <p align="center">擅長使用琴的" 佩羅娜 "，王賜予他琴" 薇爾潔 "。 </p>
+                            <p class="draw-focus" align="center"> ... </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                            <p align="center"> 擅長使用術法的" 瑪吉納"，王賜予他杖" 里布拉 "。 </p>
+                            <p align="center">擅長使用匕首的" 達格 "，王賜予他匕首" 史克皮歐 "。 </p>
+                            <p align="center">擅長使用弓的" 亞齊斯 "，王賜予他弓"賽格泰瑞斯 "。 </p>
+                            <p align="center">擅長使用的鎗"嘉納爾 "，王賜予他鎗"卡利柯尼"。 </p>
+                            <p align="center"> 擅長使用斧的" 阿克 "，王賜予他斧" 阿克洛斯 "。</p>
+                            <p align="center"> 擅長使用皮鞭的" 維伯 "，王賜予他皮鞭" 碧西斯 "。 </p>
+                            <p class="draw-focus " align="center"> ... </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                            <p align="center">以及對王子賦予最後一道命令， 要他重新帶回所有的武器，才能成為下一任"王"。</p>
+                            <p align="center">
+                                但在最後，雖然打倒了魔王卻也無法收回所有武器， 只帶回了神劍" 阿力斯 "、神杖" 里布拉"。
+                            </p>
+                            <p class="draw-focus" align="center">
+                                此後，在這片大陸上遍流傳一個傳說：
+                            </p>
+                            <p align="center">
+                                當所有王賜武器重新現世，魔王將會復活；
+                            </p>
+                            <p class="draw-focus-more" align="center">
+                                同時真正的" 王 "將會誕生。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- The Fourth Section - Character -->
+    <!-- The Part.1 of the Character. -->
+    <div id="char-1" class="container">
+        <div id="char-title" class="row">
+            <div class="col-md-12 ws-title bg-dark">
+                <h3>主要角色</h3>
+            </div>
+        </div>
+        <div id="heroin-content" class="row">
+            <div class="col-md-2"></div>
+            <div id="heroin-intro" class="col-md-8">
+                <div class="pic"></div>
+                <div class="words"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <!-- The Part.2 of the Character. -->
+    <!-- Ad an background image. -->
+    <div class="ws-bg-3">
+        <div class="char-sword">
+            <div class="container">
+                <row>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class=" weapon-list">
+                            <h3 class="draw-focus-more">白羊座之劍</h3>
+                            <h2 class="weapon-name">阿力斯</h2>
+                            <p>武器天賦：攻擊力 + 600</p>
+                            <p>武器技能：致命一擊</p>
+                            <p>技能說明：血量越低攻擊力愈高</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2"></div>
+                </row>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Part.3 of the Character. -->
+    <div class="char-cane">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="weapon-list">
+                        <h3 class="draw-focus-more">天秤座之杖</h3>
+                        <h2 class="weapon-name">里布拉</h2>
+                        <p>武器天賦：防禦力 + 800</p>
+                        <p>武器技能：正義審判</p>
+                        <p>技能說明：賦與角色無敵3回合</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The fifth Section - FAQ -->
+    <div id="faq" class="container">
+        <div id="faq-title" class="row">
+            <div class="col-md-12 ws-title bg-dark">
+                <h3>
+                    常見問題
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 question-board">
+
+                <ol class="question-list">
+                    <li>一直無法安裝 / 更新或是更新很慢時該怎麼處理？</li>
+                    <li>一直無法進入遊戲畫面？</li>
+                    <li>畫面出現鋸齒狀？</li>
+                    <li>購買彩虹石或優惠方案未立即取得？</li>
+                    <li>MyCard點數卡購買彩虹石方法</li>
+                </ol>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-cover bg-dark">
+        <div id="footer" class="container">
+            <div class="row">
+                <!-- App's Introduction -->
+                <div class="col-md-6 app-intro">
+                    <div class="pic">
+                        <img src="/img/warrior-icon.png" alt="">
+                    </div>
+                    <div class="words">
+                        <ul>
+                            <li>標題 瓦利亞強襲</li>
+                            <li>價格 免費</li>
+                            <li>語言 繁體中文, 英語</li>
+                            <li>類別 遊戲</li>
+                            <li>相容性 需要 iOS 7.0 或以上版本。與 iPhone、iPad 及 iPod touch 相容。</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Connection Icons -->
+                <div class="col-md-6 icons-container">
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/google.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/line.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/youtube.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/twitter.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="/img/gamer-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <!-- R-15 Remind -->
+            <div class="col-md-6 r15">
+                <div class="pic">
+                    <img src="/img/r15.png" alt="">
+                </div>
+                <div class="words">
+                    <ul>
+                        <li>本遊戲內涉及打鬥等。</li>
+                        <li>請注意遊玩時間避免沉迷。</li>
+                        <li>部分內容須另行支付費用。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <!-- Company's LOGO -->
+            <div class="col-md-8">
+                <img src="/img/bottom-logo-13.png" alt="">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="w100">
+            <div class="copyright">2018@copyright</div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Script -->
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+
+</body>
+
+</html>
