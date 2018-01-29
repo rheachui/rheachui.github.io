@@ -17,15 +17,13 @@
     width: 100%;
     position: fixed;
     z-index:1030;
-}
+} */
 .col-md-2, 
 .col-md-4, 
 .col-md-5, 
 .col-md-6, 
 .col-md-8, 
-.col-md-12,
-/* .swiper-slide.slide-content.swiper-slide-active  */
-{
+.col-md-12 {
     position: static;
 }
 
@@ -152,8 +150,12 @@ h3::before {
 
 .ws-bg-2 {
     width: 100%;
-    height: 600px;
+    height: 80vh;
     background-color: #aaa;
+    background-image: url('/img/cloudy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #343a40;
@@ -216,38 +218,66 @@ a.nav-link:hover {
 .pic, .words {
     float:left;
 }
-#heroin-intro.col-md-8 .pic,
-#heroin-intro.col-md-8 .words {
-    width: 50%;
+#heroin-intro.col-md-6 .pic{
+    width: 40%;
     height: 30vh;
-           
+}
+#heroin-intro.col-md-6 .words {
+    width: 60%;
+    height: 30vh;
 }
 
-#heroin-intro.col-md-8 .pic {
-    background-color: aqua;
+#heroin-intro.col-md-6 .words h2 {
+    font-weight: bolder;
+    color: navy;
 }
 
-#heroin-intro.col-md-8 .words {
-    background-color: blue;
+
+#heroin-intro.col-md-6 .pic {
+    background-image:url('/img/Tina-s-Head.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#heroin-intro.col-md-4 .words {
+    background-color: #aaa;
 }
 
 /* Part.2 of Character */
 
 .ws-bg-3 {
     width: 100%;
-    height: 400px;
-    background-color: #ccc;
-
+    height: 80vh;
+    background-color: #aaa;
+    background-image: url('/img/cloudy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
+
 
 .char-sword,
 .char-cane {
-    width: 60%;
-    height: 400px;
+    width: 75%;
+    height: 100%;
     margin: 0 auto;
-    background-color: #aaa;
+    /* background-color: #aaa; */
+}
+.char-sword {
+    background-image: url('/img/Tina-Fighter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
+.char-cane {
+    border: solid 5px powderblue;
+    height: 80vh;
+    background-image: url('/img/Tina-mage.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
 .weapon-list {
     padding: 10px;
 }
@@ -255,12 +285,12 @@ a.nav-link:hover {
 .weapon-name {
     font-size: 40px;
     font-weight: 900;
+    color:navy;
 }
 
-.char-cane {
-    /* interval between "Characters" and "FAQ". */
-    margin-bottom: 10px;
-}
+/* .char-cane .container {
+    margin-bottom:calc(80vh- 250px);
+} */
 
 /* Section.5 - FAQ */
 #faq-title.row::before {
@@ -273,63 +303,67 @@ a.nav-link:hover {
 .question-board {
     padding: 10px;
 
-        }
+}
 
-        .question-list {
-            margin: 0;
-        }
+.question-list {
+    margin: 0;
+}
 
-        /* Footer */
+/* Footer */
 
-        .footer-cover {
-            width: 100%;
-            color:#fff;
-        }
+.footer-cover {
+    width: 100%;
+    color: #fff;
+}
 
-        .app-intro,
-        .icons-container {
-            padding: 20px;
-        }
+.app-intro,
+.icons-container {
+    padding: 20px;
+}
 
-        .app-intro .pic {
-            width: 20%;
-        }
+.app-intro .pic {
+    width: 20%;
+}
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+img {
+    width: 100%;
+    height: auto;
+}
 
-        .app-intro .words {
-            width: 80%;
-        }
-        .app-intro .words ul {
-            list-style: none;
-            padding:0;
-            padding-left: 10px;
-        }
+.app-intro .words {
+    width: 80%;
+}
 
-        .icons {
-            width: 15%;
-            float: left;
-            padding: 5px;
-        }
+.app-intro .words ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+}
 
-        .r15 {
-            padding:10px 30px;
-        }
+.icons {
+    width: 15%;
+    float: left;
+    padding: 5px;
+}
 
-        .r15 .pic {
-            width: 15%;
-            min-width: 85px;
-            padding: 5px;
-        }
-        .r15 .words {
-            padding:10px;
-        }
-        .r15 .words ul {
-            padding-left:10px;
-            }
-        .copyright {
-            text-align: center;
-        }
+.r15 {
+    padding: 10px 30px;
+}
+
+.r15 .pic {
+    width: 15%;
+    min-width: 85px;
+    padding: 5px;
+}
+
+.r15 .words {
+    padding: 10px;
+}
+
+.r15 .words ul {
+    padding-left: 10px;
+}
+
+.copyright {
+    text-align: center;
+}
