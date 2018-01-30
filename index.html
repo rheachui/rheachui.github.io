@@ -452,7 +452,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <!-- Company's LOGO -->
-            <div class="col-md-8">
+            <div class="col-md-8 bottom-logo">
                 <img src="/img/bottom-logo-13.png" alt="">
             </div>
             <div class="col-md-2"></div>
@@ -478,6 +478,9 @@
 
     <script>
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
             },

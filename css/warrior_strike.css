@@ -69,21 +69,25 @@
 .slide-content {
     padding: 10px;
     width: 100%;
-    padding-bottom:30px;
-    background-color: rgb(54, 35, 12);
+    /* padding-bottom:20px; */
+    border-radius: 5px;
+    /* Pantone - PMS PANTONE 1545 */
+    border:solid 2px #4f2608;
+    /* border:solid 2px #888888; */
+    /* Pantone - PMS 1395 */
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.8)0%, rgba(153, 99, 8, 1)34%); 
 }
 .swiper-pagination {
-    bottom: 10px;
+    bottom: 5px;
 }
 
 .swiper-pagination-bullet-active {
-    background: rgb(240, 202, 32);
+    width: 10px;
+    height: 10px;
+    border:solid 1px #363636;
+    /* Pantone - PMS PANTONE 136 C */
+    background:rgba(255, 191, 63, 1);
 }
-
-.swiper-slide.slide-content.swiper-slide-active {
-    background-color: rgb(54, 35, 12);
-}
-
 #header.container .row .col-md-5 .swiper-container {
     margin-bottom: 5px;
 }
@@ -150,7 +154,7 @@ h3::before {
 
 .ws-bg-2 {
     width: 100%;
-    height: 80vh;
+    height: 670px;
     background-color: #aaa;
     background-image: url('/img/cloudy.jpg');
     background-size: cover;
@@ -165,6 +169,10 @@ a.nav-link {
     color:#fff;
 }
 
+.nav-pills .nav-link {
+    background-color: #888888;
+}
+
 a.nav-link:hover {
     color:powderblue;
 }
@@ -173,7 +181,7 @@ a.nav-link:hover {
     min-height: 370px;
     border-radius: 5px;
     padding:15px 0;
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.6);
     
 }
 
@@ -203,9 +211,10 @@ a.nav-link:hover {
         margin-bottom: 10vh;
 }
 
+
 #char-1.container #char-title.row {
     padding-top: 10px;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
 }
 
 #char-title.row::before {
@@ -218,13 +227,29 @@ a.nav-link:hover {
 .pic, .words {
     float:left;
 }
+
+
 #heroin-intro.col-md-6 .pic{
+    padding:none;
     width: 40%;
-    height: 30vh;
+    height: 250px;
+    border-bottom:solid 3px;
 }
 #heroin-intro.col-md-6 .words {
-    width: 60%;
-    height: 30vh;
+    padding-top:10px;
+    margin-bottom:30px;
+    margin-left:20px;
+    width: calc(60% - 20px);
+    height: 250px;
+}
+
+@media screen and (max-width: 1199px) {
+    /* STYLES HERE */
+    #heroin-intro.col-md-6 .pic, 
+    #heroin-intro.col-md-6 .words {
+        width: 100%;
+    }
+    
 }
 
 #heroin-intro.col-md-6 .words h2 {
@@ -237,6 +262,7 @@ a.nav-link:hover {
     background-image:url('/img/Tina-s-Head.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #heroin-intro.col-md-4 .words {
@@ -253,12 +279,12 @@ a.nav-link:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    margin-bottom: 100px;
 }
 
 
 .char-sword,
 .char-cane {
-    width: 75%;
     height: 100%;
     margin: 0 auto;
     /* background-color: #aaa; */
@@ -267,19 +293,30 @@ a.nav-link:hover {
     background-image: url('/img/Tina-Fighter.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:  bottom;
 }
 
 .char-cane {
-    border: solid 5px powderblue;
+    border-bottom: solid 5px powderblue;
     height: 80vh;
     background-image: url('/img/Tina-mage.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: bottom;
 }
 .weapon-list {
     padding: 10px;
+    width: 60%;
+    color:#fff;
+    background-color: rgba(170, 170, 170,0.6);
+}
+@media screen and (max-width: 799px) {
+    .char-cane .weapon-list {
+        margin-left:30%;
+    }
+}
+@media screen and (max-width:380px) {
+    margin-left:0;
 }
 
 .weapon-name {
@@ -300,8 +337,15 @@ a.nav-link:hover {
     display: block;
 }
 
+.card, .card-header, .card-body {
+    
+    width: 100%;
+    min-width: 460px;
+}
+
 .question-board {
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 100px;
 
 }
 
@@ -362,6 +406,10 @@ img {
 
 .r15 .words ul {
     padding-left: 10px;
+}
+
+.bottom-logo {
+    padding: 20px;
 }
 
 .copyright {
