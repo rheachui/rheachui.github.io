@@ -171,6 +171,8 @@ a.nav-link {
 
 .nav-pills .nav-link {
     background-color: #888888;
+    border:solid 2px #343a40; 
+    margin-right:10px;
 }
 
 a.nav-link:hover {
@@ -182,6 +184,7 @@ a.nav-link:hover {
     border-radius: 5px;
     padding:15px 0;
     background-color: rgba(255, 255, 255, 0.6);
+    
     
 }
 
@@ -307,6 +310,7 @@ a.nav-link:hover {
 .weapon-list {
     padding: 10px;
     width: 60%;
+    min-width: 200px;
     color:#fff;
     background-color: rgba(170, 170, 170,0.6);
 }
