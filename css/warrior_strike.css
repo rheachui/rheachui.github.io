@@ -160,9 +160,14 @@ h3::before {
     box-shadow: 10px 5px 20px 1px #757575bf;
     font-size: 20px;
     font-weight: 500;
-    padding-left: 35px;
-    padding-right:10px;
+    padding:10px 10px 10px 35px;
 }
+
+.ws-board p {
+    padding-bottom:15px;
+}
+
+
 .date-time {
     font-size:24px;
     font-weight: 700;
@@ -175,11 +180,12 @@ h3::before {
     font-weight: 700;
     color: #fcfafa;
     letter-spacing: 3px;
-    
-}
+    }
+
+
 
 .rb-stone-1 {
-    width: 70px;
+    width: 50px;
 }
 
 .rb-stone-10 {
