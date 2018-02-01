@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>瓦利亞強襲 ~Warrior Strike~</title>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <!-- AOS -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- My CSS -->
     <link rel="stylesheet" href="/css/warrior_strike.css">
 
@@ -35,9 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">
-                            最新消息
-                        </a>
+                        <a class="nav-link" href="#news">最新消息</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#story-anchor">故事背景</a>
@@ -64,10 +65,10 @@
                     <div class="swiper-container header-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide-content">
-                                <img src="/img/沐謙-天使咖啡館聯名活動-01.png" alt="">
+                                <img src="/img/Angel-Coffe.png" alt="天使咖啡館聯名活動">
                             </div>
                             <div class="swiper-slide slide-content">
-                                <img src="/img/十萬下載-02.png" alt="">
+                                <img src="/img/10-milliion-02.png" alt="十萬下載紀念">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -75,12 +76,12 @@
                     <div class="dl-link-container">
                         <div class="dl-link">
                             <a href="https://www.apple.com/tw/ios/app-store/" target="_blank">
-                                <img class="dl-icons" src="/img/app_store-02.png" alt="">
+                                <img class="dl-icons" src="/img/app_store-02.png" alt="APP store 的下載連結">
                             </a>
                         </div>
                         <div class="dl-link">
                             <a href="https://play.google.com/store" target="_blank">
-                                <img class="dl-icons" src="/img/google-play-01.png" alt="">
+                                <img class="dl-icons" src="/img/google-play-01.png" alt="Google Play 的下載連結">
                             </a>
                         </div>
                     </div>
@@ -110,11 +111,12 @@
                     <p>情人節天使咖啡館聯名活動
                         <span class="date-time"> 2/07-2/14</span>
                         ，每日登入送 &nbsp;&nbsp;
-                        <img class="rb-stone-1" src="/img/pattern/rainbowStone-x1-06.png" alt="">。</p>
+                        <img class="rb-stone-1" src="/img/pattern/rainbowStone-x1.png" alt="彩虹石">。</p>
+                    <hr>
                     <p>
                         <span class="date-time">10萬</span>
                         人次下載紀念，全服玩家贈送&nbsp;&nbsp;
-                        <img class="rb-stone-10" src="/img/pattern/rainbowStone-x10-05.png" alt=""> 。
+                        <img class="rb-stone-10" src="/img/pattern/rainbowStone-x10.png" alt="彩虹石十顆"> 。
                     </p>
                 </div>
             </div>
@@ -131,6 +133,7 @@
                 <div class="ws-board">
                     <p>
                         <span class="date-time">2017/02/06 05:00 p.m.</span> 更新</p>
+                    <hr>
                     <p>
                         <span class="date-time">2017/02/06 12:00 p.m - 05: 00 </span>維護</p>
                 </div>
@@ -167,46 +170,64 @@
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <p align="center">
-                                一群想消彌黑暗的英雄們聚集在 " 王城梅爾洛 "
-                            </p>
-                            <p class="draw-focus" align="center">
-                                接受"王"的冊封。</p>
-                            <p align="center">
-                                擅長使用劍的" 索爾斯 "，王賜予他劍" 阿力斯"。
-                            </p>
-                            <p align="center">擅長使用槍的" 蘭德爾 "，王賜予他槍" 陶洛斯 "。 </p>
-                            <p align="center">擅長使用雙刀的" 特伯爾 "，王賜予他雙刀" 高明尼 "。 </p>
-                            <p align="center">擅長使用拳法的"法斯特 "，王賜予他拳套" 坎斯爾 "。 </p>
-                            <p align="center">擅長使用刀的" 卡特蓮那 "，王賜予他刀" 里歐 "。</p>
-                            <p align="center">擅長使用琴的" 佩羅娜 "，王賜予他琴" 薇爾潔 "。 </p>
-                            <p class="draw-focus" align="center"> ... </p>
+                            <div class="story-center">
+                                <p align="center">
+                                    一群想消彌黑暗的英雄們聚集在 " 王城梅爾洛 "
+                                </p>
+                                <p class="draw-focus" align="center">
+                                    接受
+                                    <span class="King">
+                                    "王"
+                                    </span>
+                                    的冊封。</p>
+                                <p align="center">
+                                    擅長使用劍的" 索爾斯 "，王賜予他劍" 阿力斯"。
+                                </p>
+                                <p align="center">擅長使用槍的" 蘭德爾 "，王賜予他槍" 陶洛斯 "。 </p>
+                                <p align="center">擅長使用雙刀的" 特伯爾 "，王賜予他雙刀" 高明尼 "。 </p>
+                                <p align="center">擅長使用拳法的"法斯特 "，王賜予他拳套" 坎斯爾 "。 </p>
+                                <p align="center">擅長使用刀的" 卡特蓮那 "，王賜予他刀" 里歐 "。</p>
+                                <p align="center">擅長使用琴的" 佩羅娜 "，王賜予他琴" 薇爾潔 "。 </p>
+                                <p class="draw-focus" align="center"> ... </p>
+                            </div>
+
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="story-center">
+                                <p align="center"> 擅長使用術法的" 瑪吉納"，王賜予他杖" 里布拉 "。 </p>
+                                <p align="center">擅長使用匕首的" 達格 "，王賜予他匕首" 史克皮歐 "。 </p>
+                                <p align="center">擅長使用弓的" 亞齊斯 "，王賜予他弓"賽格泰瑞斯 "。 </p>
+                                <p align="center">擅長使用的鎗"嘉納爾 "，王賜予他鎗"卡利柯尼"。 </p>
+                                <p align="center"> 擅長使用斧的" 阿克 "，王賜予他斧" 阿克洛斯 "。</p>
+                                <p align="center"> 擅長使用皮鞭的" 維伯 "，王賜予他皮鞭" 碧西斯 "。 </p>
+                                <p class="draw-focus " align="center"> ... </p>
+                            </div>
 
-                            <p align="center"> 擅長使用術法的" 瑪吉納"，王賜予他杖" 里布拉 "。 </p>
-                            <p align="center">擅長使用匕首的" 達格 "，王賜予他匕首" 史克皮歐 "。 </p>
-                            <p align="center">擅長使用弓的" 亞齊斯 "，王賜予他弓"賽格泰瑞斯 "。 </p>
-                            <p align="center">擅長使用的鎗"嘉納爾 "，王賜予他鎗"卡利柯尼"。 </p>
-                            <p align="center"> 擅長使用斧的" 阿克 "，王賜予他斧" 阿克洛斯 "。</p>
-                            <p align="center"> 擅長使用皮鞭的" 維伯 "，王賜予他皮鞭" 碧西斯 "。 </p>
-                            <p class="draw-focus " align="center"> ... </p>
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="story-center">
+                                <p align="center">以及對王子賦予最後一道命令， </p>
+                                <p align="center">
+                                    要他重新帶回所有的武器，才能成為下一任"王"。
+                                </p>
+                                <p align="center">
+                                    但在最後，雖然打倒了魔王卻也無法收回所有武器， 只帶回了神劍" 阿力斯 "、神杖" 里布拉"。
+                                </p>
+                                <p class="draw-focus" align="center">
+                                    此後，在這片大陸上遍流傳一個傳說：
+                                </p>
+                                <p align="center">
+                                    當所有王賜武器重新現世，魔王將會復活；
+                                </p>
+                                <p class="draw-focus-more" align="center">
+                                    同時真正的
+                                    <span class="King">
+                                        " 王 "
+                                    </span>
+                                    將會誕生。
+                                </p>
+                            </div>
 
-                            <p align="center">以及對王子賦予最後一道命令， 要他重新帶回所有的武器，才能成為下一任"王"。</p>
-                            <p align="center">
-                                但在最後，雖然打倒了魔王卻也無法收回所有武器， 只帶回了神劍" 阿力斯 "、神杖" 里布拉"。
-                            </p>
-                            <p class="draw-focus" align="center">
-                                此後，在這片大陸上遍流傳一個傳說：
-                            </p>
-                            <p align="center">
-                                當所有王賜武器重新現世，魔王將會復活；
-                            </p>
-                            <p class="draw-focus-more" align="center">
-                                同時真正的" 王 "將會誕生。
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -224,7 +245,7 @@
         </div>
         <div id="heroin-content" class="row">
             <div class="col-md-3"></div>
-            <div id="heroin-intro" class="col-md-6">
+            <div id="heroin-intro" class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
                 <div class="pic"></div>
                 <div class="words pattern-03">
                     <h2>&nbsp;&nbsp;蒂娜</h2>
@@ -245,7 +266,7 @@
             <div class="row">
                 <div class="col-md-1 order-md-1"></div>
                 <div class="col-md-5 order-md-2 order-2">
-                    <div class=" weapon-list">
+                    <div class=" weapon-list " data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
                         <h3 class="draw-focus-gold">白羊座之劍</h3>
                         <h2 class="weapon-name">阿力斯</h2>
                         <p>
@@ -260,8 +281,8 @@
                     </div>
                 </div>
                 <div class="col-md-5 order-md-3 order-1">
-                    <div class="char">
-                        <img width=100% src="/img/Characters/fighters-01.png" alt="">
+                    <div class="char" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
+                        <img width=100% src="/img/Characters/fighters-01.png" alt="蒂娜的戰士裝">
                     </div>
 
                 </div>
@@ -276,13 +297,13 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
-                    <div class="char">
+                    <div class="char" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                         <img width=100% src="/img/Characters/mage-01.png" alt="">
                     </div>
 
                 </div>
                 <div class="col-md-5">
-                    <div class="weapon-list">
+                    <div class="weapon-list" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                         <h3 class="draw-focus-gold">天秤座之杖</h3>
                         <h2 class="weapon-name">里布拉</h2>
                         <p>
@@ -327,7 +348,7 @@
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    一直無法安裝 / 更新該怎麼處理？
+                                    <span class="question">一直無法安裝 / 更新該怎麼處理？</span>
                                 </button>
                             </h5>
                         </div>
@@ -342,7 +363,7 @@
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    一直無法進入遊戲畫面？
+                                    <span class="question">一直無法進入遊戲畫面？</span>
                                 </button>
                             </h5>
                         </div>
@@ -357,7 +378,7 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    畫面出現鋸齒狀？
+                                    <span class="question">畫面出現鋸齒狀？</span>
                                 </button>
                             </h5>
                         </div>
@@ -371,7 +392,7 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    購買彩虹石或優惠方案未立即取得？
+                                    <span class="question">購買彩虹石或優惠方案未立即取得？</span>
                                 </button>
                             </h5>
                         </div>
@@ -385,7 +406,8 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                    MyCard點數卡購買彩虹石方法
+                                    <span class="question">MyCard點數卡購買彩虹石方法</span>
+                                    
                                 </button>
                             </h5>
                         </div>
@@ -399,7 +421,10 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                    ...
+                                    <span class="question">
+                                        ...
+                                    </span>
+                                    
                                 </button>
                             </h5>
                         </div>
@@ -423,7 +448,7 @@
                 <!-- App's Introduction -->
                 <div class="col-md-6 col-12 app-intro">
                     <div class="pic">
-                        <img src="/img/warrior-icon.png" alt="">
+                        <img src="/img/warrior-icon.png" alt="瓦利亞強襲">
                     </div>
                     <div class="words">
                         <ul>
@@ -439,65 +464,66 @@
                 <div class="col-md-6 col-12 icons-container align-items-center">
                     <div class="icons">
                         <a href="https://www.google.com.tw" target="_blank">
-                            <img src="/img/google.png" alt="">
+                            <img src="/img/google.png" alt="GOOGLE 的連結">
                         </a>
                     </div>
                     <div class="icons">
                         <a href="https://zh-tw.facebook.com/login/" target="_blank">
-                            <img src="/img/facebook.png" alt="">
+                            <img src="/img/facebook.png" alt="Facebook 的連結">
                         </a>
                     </div>
                     <div class="icons">
                         <a href="https://line.me/zh-hant/" target="_blank">
-                            <img src="/img/line.png" alt="">
+                            <img src="/img/line.png" alt="Line 的連結">
                         </a>
                     </div>
                     <div class="icons">
                         <a href="https://www.youtube.com/" target="_blank">
-                            <img src="/img/youtube.png" alt="">
+                            <img src="/img/youtube.png" alt="Youtube 的連結">
                         </a>
                     </div>
                     <div class="icons">
                         <a href="https://twitter.com/?lang=zh-tw" target="_blank">
-                            <img src="/img/twitter.png" alt="">
+                            <img src="/img/twitter.png" alt="Twitter 的連結">
                         </a>
                     </div>
                     <div class="icons">
                         <a href="https://www.gamer.com.tw/" target="_blank">
-                            <img src="/img/gamer-icon-01.png" alt="巴哈姆特">
+                            <img src="/img/gamer-icon-01.png" alt="巴哈姆特的連結">
                         </a>
                     </div>
                 </div>
 
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-12"></div>
-            <!-- R-15 Remind -->
-            <div class="col-md-6 r15">
-                <div class="pic">
-                    <img src="/img/r15.png" alt="">
-                </div>
-                <div class="words">
-                    <ul>
-                        <li>本遊戲內涉及打鬥等。</li>
-                        <li>請注意遊玩時間避免沉迷。</li>
-                        <li>部分內容須另行支付費用。</li>
-                    </ul>
+            <div class="row">
+                <div class="col-md-6 col-12"></div>
+                <!-- R-15 Remind -->
+                <div class="col-md-6 r15">
+                    <div class="pic">
+                        <img src="/img/r15.png" alt="輔15級">
+                    </div>
+                    <div class="words">
+                        <ul>
+                            <li>本遊戲內涉及打鬥等。</li>
+                            <li>請注意遊玩時間避免沉迷。</li>
+                            <li>部分內容須另行支付費用。</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <!-- Company's LOGO -->
-            <div class="col-md-8 col-12 bottom-logo">
-                <img src="/img/bottom-logo-13.png" alt="">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <!-- Company's LOGO -->
+                <div class="col-md-8 col-12 bottom-logo">
+                    <img src="/img/bottom-logo-13.png" alt="蕉蕉娛樂公司">
+                </div>
+                <div class="col-md-2"></div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="w100">
+                <div class="copyright">2018@copyright</div>
+            </div>
         </div>
-        <div class="w100">
-            <div class="copyright">2018@copyright</div>
-        </div>
+
     </div>
 
 
@@ -513,6 +539,8 @@
         crossorigin="anonymous"></script>
     <!-- Swiper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -565,6 +593,10 @@
                     }
                 }
             });
+    </script>
+    <!-- AOS Initialization -->
+    <script>
+        AOS.init();
     </script>
 
 </body>
