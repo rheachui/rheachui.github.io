@@ -363,9 +363,10 @@ a.nav-link:hover {
 
 .char {
     margin-top: 15px;
-    border:solid 5px #736f6fa8;
+    border:solid 5px #4c4a4a75;
     box-shadow: 1px 4px 17px 0px #7c7f86;
     border-radius:5px;
+    margin-bottom:15px;
 }
 
 
@@ -378,6 +379,9 @@ a.nav-link:hover {
     font-size: 24px;
     color: #ffffff;
     text-shadow: 5px 0px 20px #060301e3;
+    box-shadow: 1px 4px 17px 0px #7c7f86;
+    border-radius:5px;
+    margin-bottom:15px;
 }
 .catag {
     font-size: 28px;
