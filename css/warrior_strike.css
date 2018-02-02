@@ -438,6 +438,11 @@ a.nav-link:hover {
 .question-list {
     margin: 0;
 }
+span.question {
+    font-size: 18px;
+    color:#013386;
+    font-weight: 500;
+}
 
 
 /* Footer */
